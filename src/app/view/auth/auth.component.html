@@ -1,0 +1,16 @@
+<div class="modal">
+    <div class="modal-content animate" >
+        <div class="container">
+            <label for="uname"><b>id</b></label>
+            <input type="text" placeholder="Enter id" name="id" (keyup)="onAuthDataChange($event,'id')" required>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" (keyup)="onAuthDataChange($event,'username')" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" (keyup)="onAuthDataChange($event,'password')" required>
+            
+            <button (click)="onAuthSubmit()">Login</button>
+        </div>
+      </div>
+</div>

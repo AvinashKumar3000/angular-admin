@@ -1,0 +1,80 @@
+.col {
+    padding: 10px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #a3a3a38e;
+    position: relative;
+    color: #3453D5;
+    z-index: 1;
+}
+.item,.value{
+    width: 150px;
+    margin: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+.value{
+    background-color: #5f5f5f;
+    color:white;
+    width: inherit;
+}
+.value > input {
+    color: rgb(77, 77, 77);
+    padding: 0.7vw;
+}
+.item{
+    padding: 11.2px;
+    background-color: rgb(233, 233, 233);
+}
+.item:hover {
+    box-shadow: 0px 0px 15px #888888;
+}
+.input-item {
+    width: 100%;
+    padding: 20px;
+}
+.input-item > label, .input-item > input {
+    width: 4vi
+    0%;
+}
+.lft> div , .rht > div{
+    margin: 20px;
+    padding: 0px;
+    background-color: rgb(238, 238, 238);
+}
+.lft {
+    margin-right: 20px;
+}
+.lft > div {
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+.rht > div > input {
+    padding: 10px;
+    color: #888888;
+}
+.rht > div > button {
+    padding: 10px;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+}
+.bbtn {
+
+    padding: 10px;
+    width: 90%;
+    background-color: crimson;
+    color: white;
+}

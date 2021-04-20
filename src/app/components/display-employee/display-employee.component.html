@@ -1,0 +1,38 @@
+
+<div class="app-detail">
+    <div class="container" >      
+            <div class="card" *ngFor="let employee of employees">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th id="heading name">{{employee.username}} | {{employee.id}}</th>
+                            <th id="heading button"><button class="dl-btn" (click)="delete(employee.id)">delete</button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>name</td>
+                            <td>{{employee.name}}</td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>gender</td>
+                            <td>{{employee.gender}}</td>
+                        </tr>
+                        <tr>
+                            <td>address</td>
+                            <td>{{employee.address}}</td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>date of birth</td>
+                            <td>{{employee.dob}}</td>
+                        </tr>
+                        <tr>
+                            <td>date of joining</td>
+                            <td>{{employee.doj}}</td>
+                        </tr>
+                        <!-- and so on... -->
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</div>

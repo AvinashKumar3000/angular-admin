@@ -1,0 +1,92 @@
+<div class="app-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col left">
+                <div class="item">
+                    id
+                </div>
+                <div class="item">
+                    Name
+                </div>
+                <div class="item">
+                    Website Link
+                </div>
+                <div class="item">
+                    Location
+                </div>
+                <div class="item">
+                    Start Date
+                </div>
+                <div class="item">
+                    ceo
+                </div>
+                <div class="item">
+                    profile Link
+                </div>
+                <div class="item">
+                    groupId
+                </div>
+            </div>
+            <div class="col right">
+                <div class="value">
+                    <input type="text" [value]="data.id" (input)="data.id=$event.target.value" id="id" placeholder="id" >
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.yourname" (input)="data.yourname=$event.target.value" id="Name" placeholder="Name">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.websiteLink" (input)="data.websiteLink=$event.target.value" id="Website" placeholder="Website Link">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.location" (input)="data.location=$event.target.value" id="location" placeholder="Location">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.startDate" (input)="data.startDate=$event.target.value" id="startDate" placeholder="Start Date">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.ceo" (input)="data.ceo=$event.target.value" id="ceo" placeholder="ceo">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.profileLink" (input)="data.profileLink=$event.target.value" id="profileLink" placeholder="profile Link">
+                </div>
+                <div class="value">
+                    <input type="text" [value]="data.groupId" (input)="data.groupId=$event.target.value" id="groupId" placeholder="groupId">
+                </div>
+                <div>
+                    <button class="bbtn" (click)="update()"> update </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col lft">
+                <div>
+                    username
+                </div>
+                <div>
+                    old password
+                </div>
+                <div>
+                    new password
+                </div>
+            </div>
+            <div class="col rht">
+                <div>
+                    <input type="text" [value]="data.username" (input)="data.username=$event.target.value" id="username" placeholder="username" >
+                </div>
+                <div>
+                    <input type="password" [value]="data.pass" (input)="data.pass=$event.target.value" id="password"  placeholder="password" >
+                </div>
+                <div>
+                    <input type="password" [value]="repeat" (input)="repeat=$event.target.value" id="new"  placeholder="repeat password" >
+                </div>
+                <div>
+                    <button (click)="resetPass()"> reset password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

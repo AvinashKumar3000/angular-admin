@@ -1,0 +1,11 @@
+<div>
+    <button class="btn" (click)="changeBtnStatus($event)">
+        + {{ btnName }}
+    </button>
+    <div *ngIf="btnStatus">
+        <app-create-employee></app-create-employee>
+    </div>
+    <div *ngIf="!btnStatus">
+        <app-display-employee></app-display-employee>
+    </div>
+</div>

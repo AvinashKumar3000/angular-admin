@@ -1,0 +1,40 @@
+
+<div class="flx-row">
+    <div class="container-contact100">
+        <div class="contact100-form">
+            <label for="fabout">About</label>
+            <input type="text"  name="fabout" [value]="about"  (input)="about=$event.target.value">
+            <label for="faudioLink">Audio Link</label>
+            <input type="text" name="faudioLink" [value]="audioLink" (input)="audioLink=$event.target.value">
+            <label for="ftime">Time</label>
+            <input type="text" name="ftime" [value]="time" (input)="time=$event.target.value">
+            <button class="button" (click)="updateData()">update</button>
+        </div>
+    </div>
+    <div class="container-contact100">
+        <h1>POD CAST</h1>
+        <div class="info-card">
+            <div class="flx-row">
+                <div class="icon">
+                    <i class="fa fa-file-audio-o" style="font-size:48px;color:red"></i>
+
+            <h3>
+                {{ time }}
+            </h3>
+                </div>
+                <div>
+                    <div>
+                        <p>
+                            <audio src={{audioLink}} controls></audio>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="desc">
+                <p>
+                    {{ about }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

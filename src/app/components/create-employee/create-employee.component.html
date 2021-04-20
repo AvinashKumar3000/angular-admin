@@ -1,0 +1,71 @@
+<div class="app-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col left">
+                <div class="item">
+                    Name
+                </div>
+                <div class="item">
+                    gender
+                </div>
+                <div class="item">
+                    dob
+                </div>
+                <div class="item">
+                    doj
+                </div>
+                <div class="item">
+                    address
+                </div>
+            </div>
+            <div class="col right">
+                <div class="value">
+                    <input type="text" value="" placeholder="name" (keyup)="onKeyChange($event,'name')">
+                </div>
+                <div class="value">
+                    <input type="text" value="" placeholder="gneder" (keyup)="onKeyChange($event,'gender')">
+                </div>
+                <div class="value">
+                    <input style="width: 90%;" type="date" value="" placeholder="dob" (keyup)="onKeyChange($event,'dob')">
+                </div>
+                <div class="value">
+                    <input style="width: 90%;" type="date" value="" placeholder="doj" (keyup)="onKeyChange($event,'doj')">
+                </div>
+                <div class="value">
+                    <input type="text" value="" placeholder="address" (keyup)="onKeyChange($event,'address')">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col lft">
+                <div>
+                    username
+                </div>
+                <div>
+                    password
+                </div>
+                <div>
+                    repeat password
+                </div>
+            </div>
+            <div class="col rht">
+                <div>
+                    <input type="text" placeholder="username" (keyup)="onKeyChange($event,'username')">
+                </div>
+                <div>
+                    <input type="password"  placeholder="password" (keyup)="onKeyChange($event,'password')">
+                </div>
+                <div>
+                    <input type="password"  placeholder="repeat password" (keyup)="onKeyRepeat($event)">
+                </div>
+                <div>
+                    <button (click)="onSubmit()">create user</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
